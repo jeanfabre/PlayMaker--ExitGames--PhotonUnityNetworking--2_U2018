@@ -1,0 +1,6 @@
+[submodule "Assets/PlayMaker Utils"]
+	path = Assets/PlayMaker Utils
+	url = https://jeanfabre@github.com/jeanfabre/PlayMaker--Utils.git
+[submodule "Assets/PlayMaker PUN 2"]
+	path = Assets/PlayMaker PUN 2
+	url = https://jeanfabre@github.com/jeanfabre/PlayMaker--ExitGames--PUN-2-SubModule-.git

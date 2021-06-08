@@ -453,14 +453,16 @@ MonoBehaviour:
       toState: activate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / CONNECT
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / CONNECT TO BEST SERVER
@@ -469,6 +471,7 @@ MonoBehaviour:
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -503,10 +506,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 3
@@ -1088,6 +1094,7 @@ MonoBehaviour:
       toState: activate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON DISCONNECTED
@@ -1096,14 +1103,16 @@ MonoBehaviour:
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / CREATE ROOM
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON JOINED ROOM
@@ -1112,6 +1121,7 @@ MonoBehaviour:
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -1146,10 +1156,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -1217,8 +1230,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 207.26685, y: -245}
-  m_SizeDelta: {x: 414.5337, y: 40}
+  m_AnchoredPosition: {x: 207.2232, y: -245}
+  m_SizeDelta: {x: 414.4464, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &235288158
 MonoBehaviour:
@@ -1440,6 +1453,7 @@ MonoBehaviour:
         toState: '   '
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       - fsmEvent:
           name: ERROR
@@ -1448,6 +1462,7 @@ MonoBehaviour:
         toState: '    '
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -1645,6 +1660,7 @@ MonoBehaviour:
         toState: '        '
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       - fsmEvent:
           name: ERROR
@@ -1653,6 +1669,7 @@ MonoBehaviour:
         toState: '         '
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -1984,26 +2001,28 @@ MonoBehaviour:
       isGlobal: 0
     - name: PHOTON / ON JOINED LOBBY
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON LEFT LOBBY
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: PHOTON / ON JOINED LOBBY
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: '     '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON LEFT LOBBY
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: '      '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / JOIN LOBBY
@@ -2012,6 +2031,7 @@ MonoBehaviour:
       toState: Join Lobby
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / LEAVE LOBBY
@@ -2020,6 +2040,7 @@ MonoBehaviour:
       toState: Leave Lobby
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -2048,6 +2069,7 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents:
@@ -2057,7 +2079,9 @@ MonoBehaviour:
     - name: DEMO / LEAVE LOBBY
       isSystemEvent: 0
       isGlobal: 0
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -2304,7 +2328,7 @@ PrefabInstance:
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 152.95016
+      value: 152.91742
       objectReference: {fileID: 0}
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
@@ -2314,7 +2338,7 @@ PrefabInstance:
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 305.90033
+      value: 305.83484
       objectReference: {fileID: 0}
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
@@ -2415,8 +2439,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 207.26685, y: -200}
-  m_SizeDelta: {x: 414.5337, y: 40}
+  m_AnchoredPosition: {x: 207.2232, y: -200}
+  m_SizeDelta: {x: 414.4464, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &351218339
 MonoBehaviour:
@@ -2791,6 +2815,7 @@ MonoBehaviour:
       toState: activate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON DISCONNECTED
@@ -2799,6 +2824,7 @@ MonoBehaviour:
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON LEFT ROOM
@@ -2807,6 +2833,7 @@ MonoBehaviour:
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -2841,10 +2868,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -3067,15 +3097,16 @@ MonoBehaviour:
     events:
     - name: PHOTON / ON JOINED ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: PHOTON / ON JOINED ROOM
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: Create Instance
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -3110,10 +3141,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -3215,6 +3249,7 @@ MonoBehaviour:
         toState: no warning,
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -3507,6 +3542,7 @@ MonoBehaviour:
         toState: State 1
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -4947,22 +4983,25 @@ MonoBehaviour:
       toState: '    '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / CONNECT
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: Connect Using Settings
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / CONNECT TO BEST SERVER
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: Connect to Best Server
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON CONNECTED
@@ -4971,6 +5010,7 @@ MonoBehaviour:
       toState: '  '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON DISCONNECTED
@@ -4979,6 +5019,7 @@ MonoBehaviour:
       toState: ' '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / DISCONNECT
@@ -4987,6 +5028,7 @@ MonoBehaviour:
       toState: Disconnect
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON CONNECTED TO MASTER
@@ -4995,14 +5037,16 @@ MonoBehaviour:
       toState: '       '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / CREATE ROOM
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: Create Room
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON JOINED ROOM
@@ -5011,6 +5055,7 @@ MonoBehaviour:
       toState: '          '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: 'PHOTON / ON CREATE ROOM FAILED '
@@ -5019,6 +5064,7 @@ MonoBehaviour:
       toState: '           '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON LEFT ROOM
@@ -5027,22 +5073,25 @@ MonoBehaviour:
       toState: '            '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / LEAVE ROOM
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: Leave Room
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / JOIN RANDOM ROOM
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: Join Random Room
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -5103,25 +5152,28 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents:
     - name: DEMO / CONNECT
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DEMO / CONNECT TO BEST SERVER
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DEMO / DISCONNECT
       isSystemEvent: 0
       isGlobal: 1
     - name: DEMO / CREATE ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DEMO / LEAVE ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -5413,8 +5465,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 207.26685, y: -110}
-  m_SizeDelta: {x: 414.5337, y: 40}
+  m_AnchoredPosition: {x: 207.2232, y: -110}
+  m_SizeDelta: {x: 414.4464, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526420280
 MonoBehaviour:
@@ -5654,6 +5706,7 @@ MonoBehaviour:
         toState: Animate
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -5738,6 +5791,7 @@ MonoBehaviour:
         toState: watch value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -5824,6 +5878,7 @@ MonoBehaviour:
         toState: Refresh UI Value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -5912,7 +5967,7 @@ MonoBehaviour:
     events:
     - name: DEMO / UI / ON VALUE CHANGED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: ON VALUE CHANGED
       isSystemEvent: 0
       isGlobal: 0
@@ -5954,10 +6009,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -6552,37 +6610,40 @@ MonoBehaviour:
     events:
     - name: PHOTON / ON CONNECTED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON CONNECTED TO MASTER
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON DISCONNECTED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: PHOTON / ON DISCONNECTED
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: PHOTON / ON DISCONNECTED
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON CONNECTED TO MASTER
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: PHOTON / ON CONNECTED TO MASTER
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON CONNECTED
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: PHOTON / ON CONNECTED
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -6630,10 +6691,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -6946,7 +7010,7 @@ PrefabInstance:
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 152.95016
+      value: 152.91742
       objectReference: {fileID: 0}
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
@@ -6956,7 +7020,7 @@ PrefabInstance:
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 305.90033
+      value: 305.83484
       objectReference: {fileID: 0}
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
@@ -7230,7 +7294,7 @@ PrefabInstance:
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 152.95016
+      value: 152.91742
       objectReference: {fileID: 0}
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
@@ -7240,7 +7304,7 @@ PrefabInstance:
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 305.90033
+      value: 305.83484
       objectReference: {fileID: 0}
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
@@ -7561,26 +7625,28 @@ MonoBehaviour:
       isGlobal: 1
     - name: PHOTON / ON CONNECTED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON DISCONNECTED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: PHOTON / ON CONNECTED
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: activate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON DISCONNECTED
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -7615,10 +7681,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -7881,7 +7950,7 @@ PrefabInstance:
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 152.95016
+      value: 152.91742
       objectReference: {fileID: 0}
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
@@ -7891,7 +7960,7 @@ PrefabInstance:
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 305.90033
+      value: 305.83484
       objectReference: {fileID: 0}
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
@@ -7965,7 +8034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00001882701}
+  m_AnchoredPosition: {x: 0, y: 0.000060470127}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &908396994
@@ -8113,10 +8182,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -8295,8 +8367,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 207.26685, y: -65}
-  m_SizeDelta: {x: 414.5337, y: 40}
+  m_AnchoredPosition: {x: 207.2232, y: -65}
+  m_SizeDelta: {x: 414.4464, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &959354009
 MonoBehaviour:
@@ -9275,7 +9347,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 261898361}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999684
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9350,8 +9422,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 207.26685, y: -20}
-  m_SizeDelta: {x: 414.5337, y: 40}
+  m_AnchoredPosition: {x: 207.2232, y: -20}
+  m_SizeDelta: {x: 414.4464, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299961327
 MonoBehaviour:
@@ -10131,7 +10203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22479552, guid: 192c18d73e55e466d89edd9bc2ab936d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 310.90027
+      value: 310.8348
       objectReference: {fileID: 0}
     - target: {fileID: 22479552, guid: 192c18d73e55e466d89edd9bc2ab936d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10139,7 +10211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22479552, guid: 192c18d73e55e466d89edd9bc2ab936d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 207.26685
+      value: 207.2232
       objectReference: {fileID: 0}
     - target: {fileID: 22479552, guid: 192c18d73e55e466d89edd9bc2ab936d, type: 3}
       propertyPath: m_SizeDelta.y
@@ -10454,6 +10526,7 @@ MonoBehaviour:
         toState: get is Master Client
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -10533,6 +10606,7 @@ MonoBehaviour:
         toState: watch value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -10650,6 +10724,7 @@ MonoBehaviour:
         toState: Refresh UI Value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -10755,6 +10830,7 @@ MonoBehaviour:
         toState: Animate
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -10820,7 +10896,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: DEMO / UI / ON VALUE CHANGED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DONE
       isSystemEvent: 0
       isGlobal: 0
@@ -10829,16 +10905,16 @@ MonoBehaviour:
       isGlobal: 0
     - name: PHOTON / ON DISCONNECTED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON JOINED ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON LEFT ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON MASTERCLIENT SWITCHED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -10879,10 +10955,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -12190,26 +12269,28 @@ MonoBehaviour:
     events:
     - name: PHOTON / ON PLAYER ENTERED ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON PLAYER LEFT ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: PHOTON / ON PLAYER ENTERED ROOM
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: '  '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON PLAYER LEFT ROOM
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: '   '
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -12238,10 +12319,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -12742,22 +12826,25 @@ MonoBehaviour:
       toState: activate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / CONNECT TO BEST SERVER
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / CONNECT
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -12792,10 +12879,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -12933,6 +13023,7 @@ MonoBehaviour:
         toState: Animate
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -13017,6 +13108,7 @@ MonoBehaviour:
         toState: watch value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -13103,6 +13195,7 @@ MonoBehaviour:
         toState: Refresh UI Value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -13194,7 +13287,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: DEMO / UI / ON VALUE CHANGED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DONE
       isSystemEvent: 0
       isGlobal: 0
@@ -13236,10 +13329,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -13586,6 +13682,7 @@ MonoBehaviour:
       toState: activate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON DISCONNECTED
@@ -13594,14 +13691,16 @@ MonoBehaviour:
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: DEMO / CREATE ROOM
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     - fsmEvent:
         name: PHOTON / ON JOINED ROOM
@@ -13610,6 +13709,7 @@ MonoBehaviour:
       toState: deactivate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -13644,10 +13744,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -13895,6 +13998,7 @@ MonoBehaviour:
         toState: Animate
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -13996,6 +14100,7 @@ MonoBehaviour:
         toState: cache value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -14082,6 +14187,7 @@ MonoBehaviour:
         toState: Refresh UI Value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -14187,6 +14293,7 @@ MonoBehaviour:
         toState: watch value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -14250,7 +14357,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: DEMO / UI / ON VALUE CHANGED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DONE
       isSystemEvent: 0
       isGlobal: 0
@@ -14259,16 +14366,16 @@ MonoBehaviour:
       isGlobal: 0
     - name: PHOTON / ON DISCONNECTED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON JOINED ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON LEFT ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON MASTERCLIENT SWITCHED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -14309,10 +14416,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 1
     EnableBreakpoints: 1
     editorFlags: 1
@@ -14485,6 +14595,7 @@ MonoBehaviour:
         toState: Animate
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -14586,6 +14697,7 @@ MonoBehaviour:
         toState: cache value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -14672,6 +14784,7 @@ MonoBehaviour:
         toState: Refresh UI Value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -14777,6 +14890,7 @@ MonoBehaviour:
         toState: watch value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -14840,7 +14954,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: DEMO / UI / ON VALUE CHANGED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DONE
       isSystemEvent: 0
       isGlobal: 0
@@ -14849,16 +14963,16 @@ MonoBehaviour:
       isGlobal: 0
     - name: PHOTON / ON DISCONNECTED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON JOINED ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON LEFT ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON MASTERCLIENT SWITCHED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -14899,10 +15013,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 1
     EnableBreakpoints: 1
     editorFlags: 1
@@ -15075,6 +15192,7 @@ MonoBehaviour:
         toState: Animate
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -15176,6 +15294,7 @@ MonoBehaviour:
         toState: cache value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -15262,6 +15381,7 @@ MonoBehaviour:
         toState: Refresh UI Value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -15367,6 +15487,7 @@ MonoBehaviour:
         toState: watch value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -15430,7 +15551,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: DEMO / UI / ON VALUE CHANGED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DONE
       isSystemEvent: 0
       isGlobal: 0
@@ -15439,16 +15560,16 @@ MonoBehaviour:
       isGlobal: 0
     - name: PHOTON / ON DISCONNECTED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON JOINED ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON LEFT ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON MASTERCLIENT SWITCHED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -15489,10 +15610,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 1
     EnableBreakpoints: 1
     editorFlags: 1
@@ -15718,6 +15842,7 @@ MonoBehaviour:
         toState: dismiss
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -15919,6 +16044,7 @@ MonoBehaviour:
         toState: ' '
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -16106,10 +16232,11 @@ MonoBehaviour:
     - fsmEvent:
         name: DEMO / SHOW ERROR
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: show error
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables:
@@ -16150,10 +16277,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -16292,7 +16422,7 @@ PrefabInstance:
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 152.95016
+      value: 152.91742
       objectReference: {fileID: 0}
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
@@ -16302,7 +16432,7 @@ PrefabInstance:
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 305.90033
+      value: 305.83484
       objectReference: {fileID: 0}
     - target: {fileID: 224273903799662296, guid: c7902b7c1cd3f4986b86ea589011c800,
         type: 3}
@@ -16776,7 +16906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22479552, guid: 192c18d73e55e466d89edd9bc2ab936d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 103.63342
+      value: 103.6116
       objectReference: {fileID: 0}
     - target: {fileID: 22479552, guid: 192c18d73e55e466d89edd9bc2ab936d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16784,7 +16914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22479552, guid: 192c18d73e55e466d89edd9bc2ab936d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 207.26685
+      value: 207.2232
       objectReference: {fileID: 0}
     - target: {fileID: 22479552, guid: 192c18d73e55e466d89edd9bc2ab936d, type: 3}
       propertyPath: m_SizeDelta.y
@@ -16988,8 +17118,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 207.26685, y: -155}
-  m_SizeDelta: {x: 414.5337, y: 40}
+  m_AnchoredPosition: {x: 207.2232, y: -155}
+  m_SizeDelta: {x: 414.4464, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2115499882
 MonoBehaviour:

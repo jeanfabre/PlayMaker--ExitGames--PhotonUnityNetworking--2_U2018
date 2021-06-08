@@ -177,6 +177,7 @@ MonoBehaviour:
         toState: reset
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -301,7 +302,7 @@ MonoBehaviour:
     events:
     - name: DEMO / UI / ON VALUE CHANGED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DONE
       isSystemEvent: 0
       isGlobal: 0
@@ -309,10 +310,11 @@ MonoBehaviour:
     - fsmEvent:
         name: DEMO / UI / ON VALUE CHANGED
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: Animate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables:
@@ -353,10 +355,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -629,10 +634,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -818,10 +826,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -1020,6 +1031,7 @@ MonoBehaviour:
       toState: We go instantiated
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -1054,10 +1066,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -1379,10 +1394,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -1691,10 +1709,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -2315,10 +2336,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -2714,6 +2738,7 @@ MonoBehaviour:
       toState: Send RPC
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -2742,10 +2767,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -3289,6 +3317,7 @@ MonoBehaviour:
       toState: Set label
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -3353,10 +3382,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -3611,6 +3643,7 @@ MonoBehaviour:
         toState: '  '
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -3792,7 +3825,7 @@ MonoBehaviour:
       isGlobal: 1
     - name: DEMO / UI / ON VALUE CHANGED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DONE
       isSystemEvent: 0
       isGlobal: 0
@@ -3804,6 +3837,7 @@ MonoBehaviour:
       toState: set text, outline for 2 sec
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -3832,10 +3866,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -4108,6 +4145,7 @@ MonoBehaviour:
         toState: reset
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -4232,7 +4270,7 @@ MonoBehaviour:
     events:
     - name: DEMO / UI / ON VALUE CHANGED
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: DONE
       isSystemEvent: 0
       isGlobal: 0
@@ -4240,10 +4278,11 @@ MonoBehaviour:
     - fsmEvent:
         name: DEMO / UI / ON VALUE CHANGED
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: Animate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables:
@@ -4284,10 +4323,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -4687,6 +4729,7 @@ MonoBehaviour:
         toState: '  '
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -4883,6 +4926,7 @@ MonoBehaviour:
       toState: RPC TO NEXT
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -4911,10 +4955,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -5184,6 +5231,7 @@ MonoBehaviour:
         toState: State 1
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -5374,6 +5422,7 @@ MonoBehaviour:
       toState: set text, outline for 2 sec
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables: []
@@ -5402,10 +5451,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
@@ -5708,6 +5760,7 @@ MonoBehaviour:
         toState: read slider value write to sync
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       - fsmEvent:
           name: NO
@@ -5716,6 +5769,7 @@ MonoBehaviour:
         toState: read synced value and update slider
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -6059,10 +6113,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
     preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1

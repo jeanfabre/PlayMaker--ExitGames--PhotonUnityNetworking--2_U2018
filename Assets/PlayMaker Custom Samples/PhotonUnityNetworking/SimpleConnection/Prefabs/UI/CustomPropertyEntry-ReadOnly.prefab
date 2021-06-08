@@ -561,10 +561,11 @@ MonoBehaviour:
       - fsmEvent:
           name: PHOTON / ON ROOM PROPERTIES UPDATE
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: get room custom property value
         linkStyle: 0
         linkConstraint: 1
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames: []
@@ -625,6 +626,7 @@ MonoBehaviour:
         toState: Animate
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -711,6 +713,7 @@ MonoBehaviour:
         toState: watch value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -816,6 +819,7 @@ MonoBehaviour:
         toState: Refresh UI Value
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -1008,7 +1012,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: PHOTON / ON ROOM PROPERTIES UPDATE
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -1062,10 +1066,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 3
@@ -1442,6 +1449,7 @@ MonoBehaviour:
         toState: reset
         linkStyle: 0
         linkConstraint: 0
+        linkTarget: 0
         colorIndex: 0
       actionData:
         actionNames:
@@ -1578,6 +1586,7 @@ MonoBehaviour:
       toState: Animate
       linkStyle: 0
       linkConstraint: 0
+      linkTarget: 0
       colorIndex: 0
     variables:
       floatVariables:
@@ -1618,10 +1627,13 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
+    outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
+    OutputEvents: []
     RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
     editorFlags: 1
